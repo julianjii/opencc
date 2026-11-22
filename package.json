@@ -1,0 +1,18 @@
+{
+  "name": "opencc-js-convert-copy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "选中文字右键，使用 opencc-js 转换繁体/简体并复制的 Chrome 扩展",
+  "scripts": {
+    "sync:opencc": "node scripts/sync-opencc.js",
+    "icons": "node scripts/make-icons.js",
+    "test": "node scripts/verify.js",
+    "build": "npm run sync:opencc && npm run icons && npm run test",
+    "pack": "node scripts/pack.js",
+    "pack:crx": "node scripts/pack-crx.js",
+    "release": "npm run build && npm run pack && npm run pack:crx"
+  },
+  "devDependencies": {
+    "opencc-js": "1.4.2"
+  }
+}
