@@ -20,10 +20,10 @@
 const MENUS = [
   {
     id: "convert-to-traditional",
-    title: "转换繁体并复制",
+    title: "复制为台湾繁体",
     from: "cn",
     to: "tw",
-    target: "繁体",
+    target: "台湾繁体",
   },
 ];
 

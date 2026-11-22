@@ -108,7 +108,7 @@ const background = readText("background.js");
 const menuIds = background.match(/id: "convert-to-[a-z]+"/g) || [];
 check("右键菜单只注册一项（直接显示，无二级选择）", menuIds.length === 1, menuIds.join(", "));
 check("菜单项为简化→繁体", menuIds[0] === 'id: "convert-to-traditional"');
-check("菜单标题为「转换繁体并复制」", background.includes('title: "转换繁体并复制"'));
+check("菜单标题为「复制为台湾繁体」", background.includes('title: "复制为台湾繁体"'));
 check("菜单仅在选区场景显示", background.includes('contexts: ["selection"]'));
 check("默认预设为仅字形转换（cn → tw）", background.includes('from: "cn",\n    to: "tw"'));
 check("复制优先走 offscreen（规避站点 copy 拦截）", background.includes("copyViaOffscreen(text)"));

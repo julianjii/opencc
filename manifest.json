@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "繁简转换复制",
-  "version": "1.2.0",
-  "description": "选中文字右键，一键转换为繁体或简体并复制到剪贴板。转换全部在本机完成。",
+  "version": "1.2.1",
+  "description": "选中文字右键，一键复制为台湾繁体。转换全部在本机完成，不联网。",
   "permissions": [
     "contextMenus",
     "scripting",
